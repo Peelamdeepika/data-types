@@ -1,5 +1,5 @@
 #!/bin/bash
 
-TIME=$(date)
+SUM=$(100+200)
 
-echo "script executed at $TIME"
+echo "the sum value is $SUM"
