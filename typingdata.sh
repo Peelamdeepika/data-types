@@ -1,7 +1,11 @@
 #!/bin/bash
 
-MOVIES=("Pusha" "kantara" "RRR")
+USERID=$(id -u)
 
-echo "first hit movie : ${MOVIES[0]}"
-echo "second hit movie : ${MOVIES[1]}"
-echo "Third hit movie : ${MOVIES[2]}"
+if [$USERID -eq 0]
+then
+   echo "installing mysql"
+   dnf install mysql -y
+else
+   echo "you should have root privelages"
+fi
