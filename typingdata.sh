@@ -1,8 +1,7 @@
 #!/bin/bash
 
-I=$1
-M=$2
+MOVIES=("Pusha" "kantara" "RRR")
 
-SUM=$(($I+$M))
-
-echo "the sum value is $SUM"
+echo "first hit movie : ${MOVIES[0]}"
+echo "second hit movie : ${MOVIES[1]}"
+echo "Third hit movie : ${MOVIES[3]}"
