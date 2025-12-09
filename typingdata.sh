@@ -1,5 +1,8 @@
 #!/bin/bash
 
-SUM=$(100+200)
+I=$1
+M=$2
+
+SUM=$(($I+$M))
 
 echo "the sum value is $SUM"
