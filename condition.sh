@@ -14,3 +14,4 @@ echo "git not installed"
 else
 
 echo "git got successfully installed"
+fi
