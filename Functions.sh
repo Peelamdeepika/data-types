@@ -4,4 +4,3 @@ validate() {
 }
 
 validate 200 300
-echo " finally the sum is $SUM"
