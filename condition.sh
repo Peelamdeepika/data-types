@@ -1,17 +1,18 @@
 #!/bin/bash
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]; then
-   echo "you need root access"
+if [ $USERID -ne 0 ];
+ then 
+    echo "you need root priveilages"
+    exit 1
 fi
-yum install git -y
 
+yum install mysql -y
 
-if  [ $? -ne 0 ]; then
-
-echo "git not installed"
-
-else
-
-echo "git got successfully installed"
-fi
+if [ $? -ne 0];
+  then
+   echo "mysql is not installed"
+   exit 1
+  else
+     echo "mysql installed successfully"
+  fi    
