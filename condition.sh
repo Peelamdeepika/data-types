@@ -9,7 +9,7 @@ fi
 
 yum install mysql -y
 
-if [ $? -ne 0 ];
+if [ $? -ne 0];
   then
    echo "mysql is not installed"
    exit 1
