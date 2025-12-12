@@ -18,15 +18,19 @@ if [ $USERID -ne 0 ];
 fi
 
 yum update -y
+
 Validate $? "yum upgrade"
 
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
 Validate $? "repo added"
 
 rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+
 Validate $? "key imported"
 
 yum upgrade -y
+
 Validate $? "upgraded"
 
 Validate $? "upgared"
