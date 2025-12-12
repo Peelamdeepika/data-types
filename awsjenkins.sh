@@ -21,12 +21,11 @@ yum update -y
 
 Validate $? "ym upgrade"
 
-wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 Validate $? "repo upgrade"
 
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 
 Validate $? "Key impoted"
 
