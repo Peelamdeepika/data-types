@@ -18,11 +18,7 @@ Validate() {
    echo -e "$2... has installed  $Y successfully"
   fi 
 }
- 
-if [ $USERID -eq 0 ]; then
-  echo "you need root access"
-  exit 1
-fi  
+  
 
 for PACKAGE in $@
 do
