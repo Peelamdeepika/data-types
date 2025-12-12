@@ -26,6 +26,6 @@ Vlaidate $?  "git is"
 
 yum install mysql -y
 
-Validate $? "mysql not"
+Vlaidate $? "mysql is"
 
 
