@@ -4,10 +4,10 @@ USERID=&(id -u)
 
 Vlaidate() {
    if [ $1 -ne 0 ]; then
-   echo -e "$Y $2 not installed"
+   echo -e "$2... $R not installed"
    exit 1
 else
-   echo -e "$G $2 installed successfully"
+   echo -e "$2... $G installed successfully"
 fi 
 }
 
@@ -18,7 +18,8 @@ Y="\e[33m"
 if [ $USERID -ne 0 ]; then
     echo -e "$R you need root access"
     exit 1
- fi
+fi
+
  yum install git -y
 
 Vlaidate $?  "git is"
