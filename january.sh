@@ -4,7 +4,7 @@ USERID=$(id -u)
 FOLDER="/var/log/shell-scripting-logs"
 TIME_STAMP=$(date +%y-%n-%d)
 FILE=$(echo $0)
-FILE_NAE="$FOLDER/$FILE-$TIME_STAMP.log"
+FILE_NAME="$FOLDER/$FILE-$TIME_STAMP.log"
 
 
 Vlaidate() {
