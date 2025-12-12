@@ -3,7 +3,7 @@ USERID=$(id -u)
 
 FOLDER="/var/log/shell-scripting-logs"
 TIME_STAMP=$(date +%y-%n-%d)
-FILE=$(echo $0)
+FILE=JANUARY
 FILE_NAME="$FOLDER/$FILE-$TIME_STAMP.log"
 
 
