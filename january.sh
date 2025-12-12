@@ -2,7 +2,7 @@
 USERID=$(id -u)
 
 FOLDER="/var/log/shell-scripting-logs"
-TIME_STAMP=$(date +%y-%n-%d)
+TIME_STAMP=$(date +%y-%m-%d)
 FILE=JANUARY
 FILE_NAME="$FOLDER/$FILE-$TIME_STAMP.log"
 
@@ -29,6 +29,6 @@ fi
 
 Vlaidate $?  "git is"
 
-yum install mysql -y
+yum install mysql -y &>>$FILE_NAME
 
 Vlaidate $? "mysql is"
