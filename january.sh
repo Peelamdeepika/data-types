@@ -20,7 +20,7 @@ Validate() {
 }
  
 if [ $USERID -eq 0 ]; then
-  echo "$R you need root access"
+  echo "you need root access"
   exit 1
 fi  
 
