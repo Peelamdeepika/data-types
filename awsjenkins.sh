@@ -17,9 +17,9 @@ if [ $USERID -ne 0 ];
    exit 1
 fi
 
-yum update –y
+yum update -y 
 
-Validate $? "ym upgraded"
+Validate $? "ym upgrade"
 
 wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
